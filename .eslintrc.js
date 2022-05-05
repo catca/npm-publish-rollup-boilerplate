@@ -36,6 +36,11 @@ module.exports = {
     // General
     'no-console': 'error',
 
+    'no-use-before-define': 'off',
+    'no-void': 'off',
+    'no-unused-vars': 'off',
+    'no-nested-ternary': 'off',
+
     // TypeScript
     '@typescript-eslint/consistent-type-imports': 'error',
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -84,6 +89,12 @@ module.exports = {
     '@typescript-eslint/strict-boolean-expressions': 'error',
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
 
+    '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/no-shadow': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-unnecessary-condition': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+
     // React
     'react/jsx-boolean-value': 'warn',
     'react/jsx-curly-brace-presence': 'warn',
@@ -94,6 +105,10 @@ module.exports = {
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-filename-extension': ['warn', { extensions: ['.tsx'] }],
+
+    'react/function-component-definition': 'off',
+    'react-hooks/exhaustive-deps': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off',
 
     // Functional
     'functional/prefer-readonly-type': [

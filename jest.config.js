@@ -1,7 +1,7 @@
-const SRC_PATH = "<rootDir>/src";
+const SRC_PATH = '<rootDir>/src';
 
 module.exports = {
-  preset: "ts-jest",
+  preset: 'ts-jest',
   coverageThreshold: {
     global: {
       branches: 80,
@@ -10,13 +10,13 @@ module.exports = {
       statements: -10,
     },
   },
-  coverageDirectory: "coverage",
-  moduleDirectories: ["node_modules", "src"],
-  setupFilesAfterEnv: ["<rootDir>/src/test/setupTests.ts"],
-  modulePaths: ["<rootDir>"],
+  coverageDirectory: 'coverage',
+  moduleDirectories: ['node_modules', 'src'],
+  setupFilesAfterEnv: ['<rootDir>/src/test/setupTests.ts'],
+  modulePaths: ['<rootDir>'],
   roots: [SRC_PATH],
   transform: {
-    "^.+\\.tsx?$": "ts-jest",
+    '^.+\\.tsx?$': 'ts-jest',
   },
-  testEnvironment: "jsdom",
+  testEnvironment: 'jsdom',
 };
